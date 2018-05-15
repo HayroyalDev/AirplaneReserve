@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hayroyalconsult.mavericks.airplanereservation.activity.DetailsActivity"
+    tools:showIn="@layout/activity_add"
+    android:orientation="vertical"
+    android:background="@drawable/airline">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        android:background="@drawable/airline">
+
+        <EditText
+            android:id="@+id/merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Merchant"
+            android:text="Dana Air"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_background"
+            />
+
+        <EditText
+            android:id="@+id/departure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Departure"
+            android:text="Enugu"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_background"
+            />
+
+        <EditText
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Destination"
+            android:text="Lagos"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_background"
+            />
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Amount"
+            android:text="200,000"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_background"
+            />
+
+        <EditText
+            android:id="@+id/time_of_departure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:focusable="false"
+            android:hint="Time of Departure"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/edit_background"
+            />
+        <EditText
+            android:id="@+id/journey_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:hint="Journey Time (Minutes)"
+            android:layout_margin="15dp"
+            android:text="120"
+            android:padding="15dp"
+            android:background="@drawable/edit_background"
+            />
+
+        <Button
+            android:id="@+id/add_flight_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_margin="10dp"
+            android:text="Add Flight"
+            android:layout_gravity="bottom"
+            android:drawableRight="@drawable/ic_action_air_seat"
+            android:drawableEnd="@drawable/ic_action_air_seat"/>
+    </LinearLayout>
+
+</ScrollView>

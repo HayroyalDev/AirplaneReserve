@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/merchant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arik Airways"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/flight_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Lagos - Abuja -> OPEN"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="5dp"/>
+</LinearLayout>

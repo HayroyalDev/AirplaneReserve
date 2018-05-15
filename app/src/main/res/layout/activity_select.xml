@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/airline"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hayroyalconsult.mavericks.airplanereservation.activity.SelectActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <!--Select LinearLyout-->
+        <LinearLayout
+            android:id="@+id/select_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/padlo" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/admin_sel"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="As Admin"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/user_sel"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="As User"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--Login-->
+        <LinearLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/padlo" />
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:text="admin@admin.com"
+                    android:drawableLeft="@drawable/ic_action_email_black"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_action_email_black"
+                    android:background="@drawable/edit_background"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:text="Goodbetter123"
+                    android:background="@drawable/edit_background"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_action_lock_black"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_action_lock_black"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Login" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
